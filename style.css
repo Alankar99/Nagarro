@@ -1,0 +1,198 @@
+*
+{
+   box-sizing: border-box;
+   margin: 0; 
+   padding: 0;
+   --darker: #06283D;
+   --dark: #1363DF;
+   --light : #47B5FF;
+   --lighter : #DFF6FF;
+
+   /* font-family:Arial, Helvetica, sans-serif; */
+   font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+.container-outer
+{
+    background-color: var(--darker);
+    width: 100vw;
+    height: 100vh;
+
+    color: var(--lighter);
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.head
+{
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.noTask
+{
+    text-align: center;
+    font-size: larger;
+    margin: 20px;
+}
+
+.list
+{
+    width: 70vw;
+    height: auto;
+}
+
+.task
+{
+    border: 2px solid var(--lighter);
+    background-color: var(--dark);
+    width: inherit;
+    height: auto;
+    margin: 20px;
+}
+
+.task:hover
+{
+    border: 2px solid var(--darker);
+}
+
+.title
+{
+    background-color: var(--light);
+
+    font-size: 30px;
+    font-weight: bold;
+    color:var(--darker);
+    padding: 5px;
+    /* text-align: center; */
+}
+
+.description
+{
+    display: none;
+    font-size: larger;
+}
+
+.time
+{
+    margin-left: 10px;
+}
+
+.btn1
+{
+    height: auto;
+    width: inherit;
+    font-weight: 500;
+    background-color: var(--darker);
+    color: #47B5FF;
+    border-radius: 8%;
+    transition: 200ms;
+}
+
+.btn1:hover
+{
+    height: auto;
+    width: inherit;
+    /* background-color:var(--light); */
+    /* background: linear-gradient(90deg, var(--darker) 20%, var(--dark) 50%, var(--light) 100%); */
+    
+    color: white;
+    border: 2px solid var(--lighter);
+    border-radius: 8%;
+}
+
+.deadline{
+    float: right;
+    margin-right: 10px;
+}
+
+.form
+{
+    align-self: center;
+    align-items: stretch;
+    width: 70vw;
+    height: auto;
+    margin: 20px;
+    display: none;
+
+    border: 2px solid var(--dark);
+
+    flex-direction: column;
+    align-items: center;
+
+}
+.form-input
+{
+    padding: 5px;
+    margin: 15px;
+    width: 50vw;
+    height: auto;
+
+    font-size: large;
+
+    background-color: #DFF6FF;
+    color: #06283D;
+}
+
+.submitBtn 
+{
+    width: 100px;
+    height: 40px;
+
+    background-color: var(--darker);
+    color: var(--lighter);
+    border: 2px solid var(--lighter);
+
+}
+
+.submitBtn:hover{
+    background-color: var(--lighter);
+    color: var(--darker);
+}
+
+.addTaskBtn
+{
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--lighter);
+    border-radius: 50%;
+    font-size: xx-large;
+    font-weight: bold;
+
+    float: right;
+
+    background-color: var(--light);
+    color: #06283D;
+}
+
+.doneBtn{
+   
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    color: green;
+    border-radius: 50%;
+}
+
+.tick
+{
+    font-size: 42px;
+    /* height: 50px;
+    width: 50px; */
+    float: right;
+    color: var(--darker);
+    /* background-color: var(--darker); */
+}
+
+.tick:hover
+{
+    color: rgb(0, 255, 0);
+    background-color: var(--darker);
+}

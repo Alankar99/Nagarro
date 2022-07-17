@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container-outer">
+        
+        <div class="list">
+
+            <div class="head">Tasks to do</div>        
+            
+            <div class="noTask">No Tasks to show, Click on '+' to add new Tasks </div>
+                
+        </div>
+
+        <button class="addTaskBtn"> + </button>
+
+        <div class="form">
+            <label for="taskTitle">Enter Title</label>
+            <input type="text" id="taskTitle" required class="form-input" name="taskTitle" placeholder="Enter Title" >
+            <label for="taskTime">Enter Deadline</label>
+            <input type="datetime" id="taskTime" name="taskTime" required class="form-input" placeholder="Enter Deadline">
+            <div>
+                <button class="submitBtn">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+<!-- <script src="/jquery-3.6.0.min.js"></script> -->
+<script src="app.js"></script>
+</html>
+
+
+<!-- Task -->
+<!-- <div class="task">
+    <div class="title">${title}</div>
+    
+    <div class="description">${description}</div>
+    
+    <button class="btn1">
+        Show description
+    </button>
+
+    <div>
+        <span class="time">${currentDate.toString() + "-" + currentMonth.toString() + "-" + currentYear.toString()}</span>
+        <span class="deadline">Do it by: ${deadline}</span>
+    </div>
+    
+</div> -->
